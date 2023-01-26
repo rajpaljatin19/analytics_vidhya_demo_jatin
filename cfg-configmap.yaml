@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pipeline-cfg
+data:
+  conf-file-from-cfgmap: |
+    input:
+     csv:
+      path: [/data/pipeline/datafile.csv]
+      parse_header_row: true
+      delimiter: ','
+      lazy_quotes: false
+
+    output:
+     stdout:
+      codec: lines 

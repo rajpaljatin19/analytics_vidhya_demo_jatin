@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-data
+data:
+ data-file-from-cfgmap: |
+   Variable,Breakdown,Breakdown_category,Year,RD_Value,Status,Footnotes,Unit_for_TSM_and_CSV
+   _01_Current_and_Capital_Expenditure:_Total_RD_Expenditure,ANZSIC_1_Digit,"A_Agriculture, Forestry and Fishing",2016,91,,12,NZ Dollars (millions)
+   _01_Current_and_Capital_Expenditure:_Total_RD_Expenditure,ANZSIC_1_Digit,"A_Agriculture, Forestry and Fishing",2018,89,,12,NZ Dollars (millions)
+   _01_Current_and_Capital_Expenditure:_Total_RD_Expenditure,ANZSIC_1_Digit,"A_Agriculture, Forestry and Fishing",2019,...,,12,NZ Dollars (millions)
+   _01_Current_and_Capital_Expenditure:_Total_RD_Expenditure,ANZSIC_1_Digit,"A_Agriculture, Forestry and Fishing",2020,99,P,12,NZ Dollars (millions)
+   _01_Current_and_Capital_Expenditure:_Total_RD_Expenditure,ANZSIC_1_Digit,"A_Agriculture, Forestry and Fishing",2021,...,,12,NZ Dollars (millions)
+   _01_Current_and_Capital_Expenditure:_Total_RD_Expenditure,ANZSIC_1_Digit,B_Mining,2016,5,,12,NZ Dollars (millions)
+   _01_Current_and_Capital_Expenditure:_Total_RD_Expenditure,ANZSIC_1_Digit,B_Mining,2018,9,,12,NZ Dollars (millions)
+   _01_Current_and_Capital_Expenditure:_Total_RD_Expenditure,ANZSIC_1_Digit,B_Mining,2019,...,,12,NZ Dollars (millions)
+   _01_Current_and_Capital_Expenditure:_Total_RD_Expenditure,ANZSIC_1_Digit,B_Mining,2020,2,P,12,NZ Dollars (millions)
+   _01_Current_and_Capital_Expenditure:_Total_RD_Expenditure,ANZSIC_1_Digit,B_Mining,2021,...,,12,NZ Dollars (millions)
+

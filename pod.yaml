@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pipeline-pod
+spec:
+  restartPolicy: Never
+  containers:
+  - name: pipeline-pod
+    image: jeffail/benthos:latest
+    command: ['sh', '-c', '/benthos -c /data/pipeline/conf-file-from-cfgmap']
+#    command: ['sh', '-c', 'cat /data/pipeline/conf-file-from-cfgmap']
+    ports:
+    - containerPort: 80
+    volumeMounts:
+    - name: demo-data
+      mountPath: /data/pipeline/data-file-from-cfgmap
+      subPath: data-file-from-cfgmap
+    - name: pipeline-cfg
+      mountPath: /data/pipeline/conf-file-from-cfgmap
+      subPath: conf-file-from-cfgmap
+  volumes:
+  - name: demo-data
+    configMap:
+      name: demo-data
+  - name: pipeline-cfg
+    configMap:
+      name: pipeline-cfg

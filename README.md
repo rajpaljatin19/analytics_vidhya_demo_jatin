@@ -22,25 +22,14 @@ Steps to try out the demo yourself
 
 `jatinrajpal@Jatins-MacBook-Air cloud_native_data_pipelines % kubectl get pods`
 
-`NAME              READY   STATUS              RESTARTS   AGE`
-
-`pipeline-pod      0/1     Completed           0          5s`
+![image](https://user-images.githubusercontent.com/32235493/214910793-6d8c6b0d-aa4e-4a6e-be45-be8843381f73.png)
 
 If you run `kubectl get pods -w` you'd be able to see the pod changes its `STATUS` from `RUNNING` to `COMPLETED`
 
-`jatinrajpal@Jatins-MacBook-Air cloud_native_data_pipelines % kubectl get pods -w`
-
-`NAME              READY   STATUS              RESTARTS   AGE`
-
-`pipeline-pod      0/1     ContainerCreating   0          4s`
-
-`spark-pi-driver   0/1     Error               0          102d`
-
-`pipeline-pod      1/1     Running             0          4s`
-
-`pipeline-pod      0/1     Completed           0          5s`
+![image](https://user-images.githubusercontent.com/32235493/214910593-939466a1-938a-40a8-bb6d-05faacbc63b7.png)
 
 5. Check the logs of your Pod
 
 `kubectl logs pipeline-pod`
+
 ![image](https://user-images.githubusercontent.com/32235493/214910383-b76e6bca-0fe7-4e3d-b1ce-2649ebf32391.png)

@@ -1,4 +1,4 @@
-# analytics_vidya_demo_jatin
+# analytics_vidhya_demo_jatin
 
 Steps to try out the demo yourself
 

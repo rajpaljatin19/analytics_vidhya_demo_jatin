@@ -6,11 +6,11 @@ data:
   conf-file-from-cfgmap: |
     input:
      csv:
-      path: [/data/pipeline/datafile.csv]
+      paths: [/data/pipeline/data-file-from-cfgmap]
       parse_header_row: true
       delimiter: ','
       lazy_quotes: false
 
     output:
      stdout:
-      codec: lines 
+      codec: lines

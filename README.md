@@ -33,6 +33,9 @@ If you run `kubectl get pods -w` you'd be able to see the pod changes its `STATU
 
 ![image](https://user-images.githubusercontent.com/32235493/214910593-939466a1-938a-40a8-bb6d-05faacbc63b7.png)
 
+
+Demo video for the session is hosted on Analytics Vidhya Youtube channel - https://www.youtube.com/live/veuW3m3-hus?feature=share
+
 6. Check the logs of your Pod
 
 `kubectl logs pipeline-pod`
